@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+    input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+        font-family: cursive;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+        input[type=submit] {
+    
+    background-color: #b7b698;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+        #means{
+            font-family:cursive;
+            font-size: 15px;
+        }
+      </style>
+  </head>
+  <body>
+      <div>
+          <form>
+              <label for="ipu">Enter Word to be search</label>
+              <input type="text" id="inpu" name="inpu" >
+                <input type="submit" value="Submit">
+          </form>
+      </div>
+      <div id= "means">
+          meaning:
+          <pre id="means2"></pre>
+      </div>
+      <script src="popup.js"></script>
+  </body>
+</html>
+

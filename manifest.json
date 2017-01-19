@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "DICTO",
+  "description": "a simple dicto",
+  "version": "0.1",
+    
+"icons": { "16": "ico.png",
+           "48": "ico.png",
+          "128": "ico.png" },
+    
+  "browser_action": {
+    "default_icon": "ico.png",
+    "default_popup": "popup.html"
+  },
+    
+    "permissions": ["http://api.wordnik.com:80/*", "https://api.wordnik.com:80/*"],
+    
+    
+     "background": {
+    "scripts": ["background.js"]
+  },
+    "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*","file:///C:/*"],
+      "css": ["mystyles.css"],
+      "js": ["sec.js"]
+    }
+  ]
+}
