@@ -1,0 +1,10 @@
+#snackbar {
+    min-width: 650px; margin-left: -125px;background-color: #333;color: #fff;border-radius: 2px;padding: 16px;position:fixed;z-index: 1;bottom: 30px;font-size: 17px;left:10%;right:10%;visibility:hidden;
+    border:0px;
+}
+#exit
+{
+    background-color: red;
+    color:yellow;right:20px;position:absolute;
+}
+
